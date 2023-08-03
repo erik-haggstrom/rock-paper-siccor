@@ -9,11 +9,48 @@
   
   <script>
     function getComputerChoice() {
-      const computerChoice = ['Rock', 'Paper', 'Scissors']
+      const computerChoice = ['rock', 'paper', 'scissors']
       return computerChoice[Math.floor(Math.random() * 3)];
     }
 
-    getComputerChoice();
+    const playerSelection = prompt('Rock paper or siccors?: ').toLowerCase();
+    const computerSelection = getComputerChoice();
+
+    function playRound (playerSelection, computerSelection) {
+      if (playerSelection === 'rock' && computerSelection === 'scissors') {
+        console.log("Rock beats scissors and you win!")
+      }
+      else if (playerSelection === 'rock' && computerSelection === 'paper'){
+        console.log("paper beats rock the computer wins!")
+      }
+      else if (playerSelection === 'rock' && computerSelection === 'rock'){
+        console.log("It is a draw!")
+      }
+      else if (playerSelection === 'paper' && computerSelection === 'scissors') {
+        console.log("Scissors beats paper and the computer wins!")
+      }
+      else if (playerSelection === 'paper' && computerSelection === 'paper'){
+        console.log("It is a draw!")
+      }
+      else if (playerSelection === 'paper' && computerSelection === 'rock'){
+        console.log("paper beats rock and you win!")
+      }
+      else if (playerSelection === 'scissors' && computerSelection === 'scissors') {
+        console.log("It is a draw!")
+      }
+      else if (playerSelection === 'scissors' && computerSelection === 'paper'){
+        console.log("Scissors beats paper and you win!")
+      }
+      else if (playerSelection === 'scissors' && computerSelection === 'rock'){
+        console.log("Rock beats scissors and the computer wins!")
+      }
+    }
+
+    function game() {
+      
+    }
+    
+
   </script>
 
 </body>
