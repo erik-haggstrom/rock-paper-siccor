@@ -11,12 +11,33 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 80px;
+  flex-direction: column;
+  gap: 200px;
+}
 
+.knappar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
 }
 
 .knapp{
   height: 100px;
   width: 200px;
   font-size: 30px;
+}
+
+.resultat{
+  text-align: center;
+  width: 200px;
+  text-align: center;
+  height: 30px;
+}
+
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 300px;
 }
